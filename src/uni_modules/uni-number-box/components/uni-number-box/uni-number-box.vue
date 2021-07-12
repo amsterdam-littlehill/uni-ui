@@ -64,8 +64,12 @@
 			}
 		},
 		created() {
-			this.inputValue = +this.value;
-			this.inputValue = +this.modelValue;
+			if(this.value === 1){
+				this.inputValue = +this.modelValue;
+			}
+			if(this.modelValue === 1){
+				this.inputValue = +this.value;
+			}
 		},
 		methods: {
 			_calcValue(type) {

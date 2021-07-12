@@ -40,7 +40,6 @@
 			}
 		},
 		methods: {
-			change(){},
 			search(res) {
 				uni.showToast({
 					title: '搜索：' + res.value,

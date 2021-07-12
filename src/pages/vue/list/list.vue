@@ -79,8 +79,12 @@
 				</template>
 			</uni-list-item>
 			<uni-list-item>
-				<view v-slot:header class="slot-box"><image class="slot-image" src="/static/logo.png" mode="widthFix"></image></view>
-				<text v-slot:body class="slot-box slot-text">自定义左侧插槽</text>
+				<template  v-slot:header>
+					<view class="slot-box"><image class="slot-image" src="/static/logo.png" mode="widthFix"></image></view>
+				</template >
+				<template v-slot:body>
+					<text  class="slot-box slot-text">自定义左侧插槽</text>
+				</template>
 				<template v-slot:footer>
 					<image class="slot-image" src="/static/logo.png" mode="widthFix"></image>
 				</template>

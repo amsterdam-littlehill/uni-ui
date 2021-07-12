@@ -36,7 +36,6 @@ export default {
       }
     }
     document.addEventListener('keyup', listener)
-	// 暂时不兼容 vue3
     // this.$once('hook:beforeDestroy', () => {
     //   document.removeEventListener('keyup', listener)
     // })

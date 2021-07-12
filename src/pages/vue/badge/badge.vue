@@ -2,7 +2,6 @@
 	<view class="page">
 		<text class="example-info">数字角标通用来标记重点信息使用，如接受到新消息、有未读消息等</text>
 		<uni-section title="定位: aboslute 属性 + offset 属性" type="line"></uni-section>
-		<view v-if="index<5" v-for="(item,index) in 10">{{item}}</view>
 		<view class="example-body">
 			<uni-badge class="uni-badge-left-margin" :text="value" absolute="rightTop" size="small" type="primary">
 				<view class="box"><text class="box-text">右上</text></view>

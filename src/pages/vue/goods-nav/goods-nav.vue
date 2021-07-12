@@ -51,8 +51,7 @@
 		},
 		onLoad() {},
 		methods: {
-			onClick(e,) {
-				console.log(e);
+			onClick(e) {
 				uni.showToast({
 					title: `点击${e.content.text}`,
 					icon: 'none'
